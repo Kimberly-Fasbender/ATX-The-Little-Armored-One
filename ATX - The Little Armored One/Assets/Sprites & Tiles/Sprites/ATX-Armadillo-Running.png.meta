@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: 258ced7a9926407449da3faa6b1b7fb0
+guid: 8aea24d8c81d4470aa452f58e86ef058
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3792814079860558136
+    second: ATX-Armadillo-Running_0
+  - first:
+      213: -6329410701423919895
+    second: ATX-Armadillo-Running_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +114,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ATX-Armadillo-Running_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 124
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6c442e6b8484101a731241a63267b3
+      internalID: 3792814079860558136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATX-Armadillo-Running_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 124
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350575986e8064b2dab0ea9b541cef69
+      internalID: -6329410701423919895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
