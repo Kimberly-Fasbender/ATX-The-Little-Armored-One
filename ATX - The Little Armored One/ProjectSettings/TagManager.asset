@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sky
+    uniqueID: 1258090129
+    locked: 0
+  - name: Clouds
+    uniqueID: 3642779313
+    locked: 0
+  - name: Rolling Hills
+    uniqueID: 2145172679
+    locked: 0
+  - name: Foreground
+    uniqueID: 2751958377
+    locked: 0
+  - name: Player
+    uniqueID: 2484619027
+    locked: 0
