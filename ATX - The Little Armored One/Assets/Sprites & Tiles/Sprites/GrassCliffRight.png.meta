@@ -110,11 +110,23 @@ TextureImporter:
     serializedVersion: 2
     sprites: []
     outline: []
+<<<<<<< Updated upstream
     physicsShape:
     - - {x: -64, y: -64}
       - {x: -64, y: 43}
       - {x: 64, y: 43}
       - {x: 64, y: -64}
+=======
+<<<<<<< Updated upstream
+    physicsShape: []
+=======
+    physicsShape:
+    - - {x: -64, y: -64}
+      - {x: -64, y: 39}
+      - {x: 64, y: 39}
+      - {x: 64, y: -64}
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
