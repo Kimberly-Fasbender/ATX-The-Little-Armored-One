@@ -490,7 +490,68 @@ Transform:
   m_Father: {fileID: 1230633687}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &896571607
+=======
+--- !u!1 &1424366394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6746442597355588023, guid: 0db9976def9eb4fc39e2e04341fd6ebc,
+    type: 3}
+  m_PrefabInstance: {fileID: 6746442596066235021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1424366395
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424366394}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!70 &1424366396
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424366394}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.012622773, y: 0.018803898}
+  m_Size: {x: 0.99907184, y: 0.6624015}
+  m_Direction: 1
+--- !u!114 &1424366397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424366394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1758db9fde8234b83af03f00c1fd12d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 4
+  jumpSpeed: 20
+--- !u!1 &1448646314
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -759,7 +820,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143570221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: -0.5, z: 2}
+=======
+  m_LocalPosition: {x: 1, y: 0.5, z: 2}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 102163325}
@@ -1614,6 +1679,7 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 2143570227}
     m_ColliderPaths:
+<<<<<<< Updated upstream
     - - X: 29999971
         Y: 10000000
       - X: 29999971
@@ -1622,6 +1688,32 @@ CompositeCollider2D:
         Y: 19999971
       - X: 29
         Y: 10000000
+=======
+    - - X: 49999971
+        Y: 20000000
+      - X: 49999971
+        Y: 28046876
+      - X: 30000000
+        Y: 28046847
+      - X: 30000029
+        Y: 20000000
+    - - X: 29999971
+        Y: 10000000
+      - X: 29999971
+        Y: 18046876
+      - X: 0
+        Y: 18046847
+      - X: 29
+        Y: 10000000
+    - - X: -29
+        Y: 0
+      - X: -29
+        Y: 8046875
+      - X: -10000000
+        Y: 8046846
+      - X: -9999971
+        Y: 0
+>>>>>>> Stashed changes
     - - X: 59999971
         Y: -50000000
       - X: 60000029
@@ -1629,6 +1721,7 @@ CompositeCollider2D:
       - X: 70000000
         Y: -19999971
       - X: 69999971
+<<<<<<< Updated upstream
         Y: -10000000
       - X: 60000000
         Y: -9999971
@@ -1650,11 +1743,25 @@ CompositeCollider2D:
         Y: 0
       - X: -40000000
         Y: -29
+=======
+        Y: -11953125
+      - X: 59999990
+        Y: -11953117
+      - X: 49999988
+        Y: -1953125
+      - X: 39999994
+        Y: -1953133
+      - X: 29999991
+        Y: -11953125
+      - X: -40000000
+        Y: -11953154
+>>>>>>> Stashed changes
       - X: -39999971
         Y: -50000000
     - - X: 119999971
         Y: -50000000
       - X: 119999971
+<<<<<<< Updated upstream
         Y: -20000000
       - X: 109765618
         Y: -20000008
@@ -1664,19 +1771,35 @@ CompositeCollider2D:
         Y: -30000000
       - X: 90000000
         Y: -30000029
+=======
+        Y: -21953124
+      - X: 109999994
+        Y: -21953132
+      - X: 99999991
+        Y: -31953124
+      - X: 90000000
+        Y: -31953153
+>>>>>>> Stashed changes
       - X: 90000029
         Y: -50000000
     - - X: 79999971
         Y: -30000000
       - X: 79999971
+<<<<<<< Updated upstream
         Y: -20000000
       - X: 70000000
         Y: -20000029
+=======
+        Y: -21953124
+      - X: 70000000
+        Y: -21953153
+>>>>>>> Stashed changes
       - X: 70000029
         Y: -30000000
     - - X: -50000029
         Y: -50000000
       - X: -50000029
+<<<<<<< Updated upstream
         Y: -20000000
       - X: -60234382
         Y: -20000008
@@ -1692,10 +1815,24 @@ CompositeCollider2D:
         Y: -40000000
       - X: -100000000
         Y: -40000029
+=======
+        Y: -21953124
+      - X: -60000006
+        Y: -21953132
+      - X: -70000009
+        Y: -31953124
+      - X: -80000006
+        Y: -31953132
+      - X: -90000009
+        Y: -41953124
+      - X: -100000000
+        Y: -41953153
+>>>>>>> Stashed changes
       - X: -99999971
         Y: -50000000
   m_CompositePaths:
     m_Paths:
+<<<<<<< Updated upstream
     - - {x: 2.9999943, y: 1}
       - {x: 2.9999943, y: 2}
       - {x: 0, y: 1.9999943}
@@ -1735,6 +1872,47 @@ CompositeCollider2D:
       - {x: 10, y: -2.976565}
       - {x: 9.999994, y: -3}
       - {x: 9, y: -3.0000057}
+=======
+    - - {x: 4.9999943, y: 2}
+      - {x: 4.9999943, y: 2.8046877}
+      - {x: 3, y: 2.8046818}
+      - {x: 3.0000057, y: 2}
+    - - {x: 2.9999943, y: 1}
+      - {x: 2.9999943, y: 1.8046876}
+      - {x: 0, y: 1.8046818}
+      - {x: 0.0000058, y: 1}
+    - - {x: -0.0000058, y: 0}
+      - {x: -0.0000058, y: 0.8046875}
+      - {x: -1, y: 0.8046817}
+      - {x: -0.9999942, y: 0}
+    - - {x: 5.9999943, y: -5}
+      - {x: 6.0000057, y: -2}
+      - {x: 7, y: -1.9999943}
+      - {x: 6.9999943, y: -1.1953125}
+      - {x: 5.999998, y: -1.195311}
+      - {x: 4.9999976, y: -0.1953125}
+      - {x: 3.9999988, y: -0.19531411}
+      - {x: 2.9999983, y: -1.1953125}
+      - {x: -4, y: -1.1953183}
+      - {x: -3.9999945, y: -5}
+    - - {x: -5.0000057, y: -5}
+      - {x: -5.0000057, y: -2.1953125}
+      - {x: -6.0000014, y: -2.195314}
+      - {x: -7.000002, y: -3.1953125}
+      - {x: -8.000002, y: -3.195314}
+      - {x: -9.000002, y: -4.1953125}
+      - {x: -10, y: -4.195318}
+      - {x: -9.999994, y: -5}
+    - - {x: 7.9999943, y: -3}
+      - {x: 7.9999943, y: -2.1953125}
+      - {x: 7, y: -2.1953182}
+      - {x: 7.0000057, y: -3}
+    - - {x: 11.999994, y: -5}
+      - {x: 11.999994, y: -2.1953125}
+      - {x: 10.999998, y: -2.195314}
+      - {x: 9.999998, y: -3.1953125}
+      - {x: 9, y: -3.1953182}
+>>>>>>> Stashed changes
       - {x: 9.000006, y: -5}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.000005
@@ -1790,7 +1968,11 @@ PrefabInstance:
     - target: {fileID: 6746442597355588022, guid: 0db9976def9eb4fc39e2e04341fd6ebc,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -3.27
+=======
+      value: -0.61
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6746442597355588022, guid: 0db9976def9eb4fc39e2e04341fd6ebc,
         type: 3}
