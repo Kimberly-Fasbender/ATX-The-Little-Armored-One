@@ -61,8 +61,8 @@ public class Player : MonoBehaviour
             myRigidBody.velocity += velocityToAdd;
         }
 
-        // // animation transition
-        // bool hasVerticalVelocity = Mathf.Abs(myRigidBody.velocity.y) > 0;
-        // myAnimator.SetBool("Jump", hasVerticalVelocity); 
+        // animation transition
+        bool hasVerticalVelocity = Mathf.Abs(myRigidBody.velocity.y) > 0;
+        myAnimator.SetBool("Jumping", hasVerticalVelocity); 
     }
 }
