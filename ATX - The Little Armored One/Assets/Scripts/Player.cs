@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     Animator animator;
     Collider2D collider;
     CapsuleCollider2D capsuleCollider;
+    Vector2 origCapsuleColliderOffset;
+    Vector2 origCapsuleColliderSize;
 
 
     // Start is called before the first frame update
@@ -20,6 +22,9 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         collider = GetComponent<Collider2D>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+
+        origCapsuleColliderOffset = new Vector2(capsuleCollider.offset.x, capsuleCollider.offset.y);
+        origCapsuleColliderSize = new Vector2(capsuleCollider.size.x, capsuleCollider.size.y);
     }
 
     // Update is called once per frame
@@ -63,26 +68,25 @@ public class Player : MonoBehaviour
             rigidBody.velocity += velocityToAdd;
 
             animator.SetTrigger("TakingOff");
-
         }
 
         // animation transition
-        // bool hasVerticalVelocity = Mathf.Abs(myRigidBody.velocity.y) > 0;
         animator.SetBool("Jumping", !isTouchingGround); 
-        // Vector2 unrolledColliderSize = new Vector2(capsuleCollider.size.x, capsuleCollider.size.y);
 
+        UpdateCapsuleCollider();
+    }
 
-        if (animator.GetBool("Jumping") == true)
+    private void UpdateCapsuleCollider() 
+    {
+         if (animator.GetBool("Jumping") == true)
         {
-            Debug.Log("Jumping is True");
             capsuleCollider.offset = new Vector2(-0.005f, 0.005f);
             capsuleCollider.size = new Vector2(0.0001f, 0.45f);
         } 
         else 
         {
-            Debug.Log("Jumping is False");
-            capsuleCollider.offset = new Vector2(-0.01262277f, 0.0188039f);
-            capsuleCollider.size = new Vector2(0.9990718f, 0.6624015f);
+            capsuleCollider.offset = origCapsuleColliderOffset;
+            capsuleCollider.size = origCapsuleColliderSize;
         }
     }
 }
