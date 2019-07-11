@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
 
     Rigidbody2D myRigidBody;
     Animator myAnimator;
+    Collider2D myCollider;
 
 
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        myCollider = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -50,7 +52,10 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
+        LayerMask ground = LayerMask.GetMask("Ground");
+        bool isTouchingGround = myCollider.IsTouchingLayers(ground);
+
+        if (Input.GetButtonDown("Jump") && isTouchingGround)
         {
             Vector2 velocityToAdd = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += velocityToAdd;
