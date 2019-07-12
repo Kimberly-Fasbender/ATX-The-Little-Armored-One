@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] float runSpeed = 5f;
-    [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] float jumpHeight = 4.0f;
 
     Rigidbody2D rigidBody;
     Animator animator;
@@ -64,11 +64,13 @@ public class Player : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isTouchingGround)
         {
-            Vector2 velocityToAdd = new Vector2(0f, jumpSpeed);
-            rigidBody.velocity += velocityToAdd;
+            Vector2 jumpVelocity = new Vector2(0, 
+                Mathf.Sqrt(-2.0f * Physics2D.gravity.y * jumpHeight));
+            rigidBody.velocity = jumpVelocity;
 
             animator.SetTrigger("TakingOff");
         }
+
 
         // animation transition
         animator.SetBool("Jumping", !isTouchingGround); 
